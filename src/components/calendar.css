@@ -1,0 +1,65 @@
+.month-year{
+	background-color: lightgreen;
+	display:flex;
+	justify-content: space-between;
+	height:90px;
+}
+.month-year-label{
+	padding: 20px;
+}
+.monthLabel{
+
+}
+.yearLabel{
+
+}
+.week-row > span:hover:not(.disabled) {
+    background-color: #e4e4bb;
+}
+.weekNames{
+	background-color: blanchedalmond;
+}
+.weekNames > span {
+/* 	border-left: 1px solid #CACACA; */
+}
+.days{
+	background-color: blanchedalmond;
+}
+
+.week-row {
+	display:flex;
+
+}
+.week-row > span {
+	flex-grow: 1;
+   	flex-basis: 80px;
+   	padding:20px 10px;
+   	border-left: 1px solid #CACACA;
+   	border-bottom: 1px solid #CACACA;
+}
+
+.week-row > span:last-child {
+	border-right: 1px solid #CACACA;
+}
+
+.weekNames.week-row > span {
+	border-top: 1px solid #CACACA;
+}
+
+.left-handler, .right-handler{
+	width: 10%;
+	max-width:30px;
+	height: 100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.left-handler:hover, .right-handler:hover{
+	background-color: green;
+	color:white;
+}
+
+.right-handler{
+	
+}
