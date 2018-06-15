@@ -1,29 +1,31 @@
+#root {
+	position: relative;
+}
+.calendar {
+	max-width: 600px;
+}
 .month-year{
-	background-color: lightgreen;
+	background-color: #18bc9b;
 	display:flex;
 	justify-content: space-between;
 	height:90px;
 }
+
 .month-year-label{
 	padding: 20px;
 }
-.monthLabel{
 
+.days > .week-row > span:hover:not(.disabled) {
+    background-color: #18bc9b;
 }
-.yearLabel{
 
-}
-.week-row > span:hover:not(.disabled) {
-    background-color: #e4e4bb;
-}
 .weekNames{
-	background-color: blanchedalmond;
+	background-color: #ddd;
 }
-.weekNames > span {
-/* 	border-left: 1px solid #CACACA; */
-}
+
 .days{
-	background-color: blanchedalmond;
+	background-color: #eee;
+	border: 1px solid #CACACA;
 }
 
 .week-row {
@@ -33,13 +35,7 @@
 .week-row > span {
 	flex-grow: 1;
    	flex-basis: 80px;
-   	padding:20px 10px;
-   	border-left: 1px solid #CACACA;
-   	border-bottom: 1px solid #CACACA;
-}
-
-.week-row > span:last-child {
-	border-right: 1px solid #CACACA;
+   	padding:4px 10px;
 }
 
 .weekNames.week-row > span {
@@ -56,10 +52,34 @@
 }
 
 .left-handler:hover, .right-handler:hover{
-	background-color: green;
+	background-color: #15ab8d;
 	color:white;
 }
 
 .right-handler{
 	
+}
+
+.new-event {
+	position: absolute;
+	max-width: 200px;
+	display: inline-block;
+	background: #555454;
+	padding: 5px;
+	box-sizing: content-box;
+
+}
+
+.new-event > .input-row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.new-event > .input-row > input {
+	max-width: 100px;
+}
+
+#eventName {
+	max-width: 200px;
+	width: 200px;
 }
